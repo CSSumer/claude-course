@@ -40,8 +40,8 @@ export function MessageList({ messages, isLoading }: MessageListProps) {
   if (messages.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center h-full px-4 text-center">
-        <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-50 mb-4 shadow-sm">
-          <Bot className="h-7 w-7 text-blue-600" />
+        <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-orange-50 mb-4 shadow-sm">
+          <Bot className="h-7 w-7 text-orange-600" />
         </div>
         <p className="text-neutral-900 font-semibold text-lg mb-2">Start a conversation to generate React components</p>
         <p className="text-neutral-500 text-sm max-w-sm">I can help you create buttons, forms, cards, and more</p>
@@ -75,7 +75,7 @@ export function MessageList({ messages, isLoading }: MessageListProps) {
               <div className={cn(
                 "rounded-xl px-4 py-3",
                 message.role === "user" 
-                  ? "bg-blue-600 text-white shadow-sm" 
+                  ? "bg-orange-600 text-white shadow-sm"
                   : "bg-white text-neutral-900 border border-neutral-200 shadow-sm"
               )}>
                 <div className="text-sm">
@@ -112,7 +112,7 @@ export function MessageList({ messages, isLoading }: MessageListProps) {
                                   </>
                                 ) : (
                                   <>
-                                    <Loader2 className="w-3 h-3 animate-spin text-blue-600" />
+                                    <Loader2 className="w-3 h-3 animate-spin text-orange-600" />
                                     <span className="text-neutral-700">{label}</span>
                                   </>
                                 )}
@@ -159,7 +159,7 @@ export function MessageList({ messages, isLoading }: MessageListProps) {
             
             {message.role === "user" && (
               <div className="flex-shrink-0">
-                <div className="w-9 h-9 rounded-lg bg-blue-600 shadow-sm flex items-center justify-center">
+                <div className="w-9 h-9 rounded-lg bg-orange-600 shadow-sm flex items-center justify-center">
                   <User className="h-4.5 w-4.5 text-white" />
                 </div>
               </div>
