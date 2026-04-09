@@ -243,8 +243,8 @@ test("MessageList applies correct styling for user vs assistant messages", () =>
     .getByText("Assistant message")
     .closest(".rounded-xl");
 
-  // User messages should have blue background
-  expect(userMessage?.className).toContain("bg-blue-600");
+  // User messages should have orange background
+  expect(userMessage?.className).toContain("bg-orange-600");
   expect(userMessage?.className).toContain("text-white");
 
   // Assistant messages should have white background

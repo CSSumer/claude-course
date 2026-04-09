@@ -185,7 +185,7 @@ test("applies correct CSS classes based on loading state", () => {
 
   let submitButton = screen.getByRole("button");
   expect(submitButton.className).toContain("disabled:opacity-40");
-  expect(submitButton.className).toContain("hover:bg-blue-50");
+  expect(submitButton.className).toContain("hover:bg-orange-50");
 
   rerender(
     <MessageInput
@@ -242,7 +242,7 @@ test("textarea has correct styling classes", () => {
   expect(textarea.className).toContain("max-h-[200px]");
   expect(textarea.className).toContain("resize-none");
   expect(textarea.className).toContain("focus:ring-2");
-  expect(textarea.className).toContain("focus:ring-blue-500/10");
+  expect(textarea.className).toContain("focus:ring-orange-500/10");
 });
 
 test("submit button click triggers form submission", async () => {
